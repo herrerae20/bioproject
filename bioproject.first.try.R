@@ -1,0 +1,7 @@
+bio185::startAssignment("02-basic-plotting")
+library(ggplot2)
+print(diamonds)
+ggplot(diamonds, aes(price)) + geom_histogram()
+ggplot(diamonds, aes(price)) + geom_density()
+ggplot(diamonds, aes(price, fill = color)) + geom_density(alpha = 0.2)
+ggplot(diamonds, aes(carat, price, color = cut)) + geom_point(alpha = 0.3)
